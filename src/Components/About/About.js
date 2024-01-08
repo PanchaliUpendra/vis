@@ -18,7 +18,6 @@ function About(){
             <div className='about-banner'>
                 <img src={Aboutbanner} alt='about-banner'/>
             </div>
-
             {/* about - us - head*/}
             <div className='About-us-head'>
                 <h1>About Us</h1>

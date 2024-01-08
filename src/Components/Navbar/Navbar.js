@@ -1,11 +1,9 @@
 import React from 'react';
 import './Navbar.css';
 import Vlogo from '../../Assets/vislogo.jpeg';
-import {useNavigate} from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 function Navbar(){
-    const navigate = useNavigate();
     return(
         <>
         <div className='nav-con'>
