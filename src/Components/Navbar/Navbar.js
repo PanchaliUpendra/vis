@@ -85,12 +85,15 @@ function Navbar(){
                                 <span className='btn-wrapper-bottom'>FAQ's</span>
                             </div>
                         </li>
+                        <NavLink to='/contact'>
                         <li>
                             <div className='button-wrapper'>
                                 <div className='btn-wrapper-top'>contact</div>
                                 <span className='btn-wrapper-bottom'>contact</span>
                             </div>
                         </li>
+                        </NavLink>
+                       
                     </ul>
                 </div>
                 <div className='nav-res'>
