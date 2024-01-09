@@ -23,10 +23,11 @@ function Gallery(){
         <>
             <div className='gallery-con'>
                 <div className='video-container'>
-                    <video  className='video-tag' autoPlay muted>
+                    <video  className='video-tag' autoPlay muted loop>
                         <source src={Promo} type='video/mp4'/>
                         Your browser does not support the video tag.
                     </video>
+                    <p>Gallery</p>
                 </div>
                 <div className='gallery-images'>
                     <div className='gallery-img-header'>

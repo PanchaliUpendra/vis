@@ -1,9 +1,38 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Navbar.css';
 import Vlogo from '../../Assets/vislogo.jpeg';
 import { NavLink } from 'react-router-dom';
+import Drawer from '@mui/material/Drawer';
 
 function Navbar(){
+    const [menutoggle,setmenutoggle] = useState({
+        left:false
+    });
+    const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+          return;
+        }
+        setmenutoggle({...menutoggle,[anchor]:open});
+      };
+      const list = (anchor) => (
+        <ul
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+          className="list-box"
+          role="presentation"
+          >
+            <NavLink to='/'><li>Home</li></NavLink>
+            <NavLink to='/about'><li>About</li></NavLink>
+            <NavLink to='/academics'><li>Academics</li></NavLink>
+            <NavLink to='/facilities'><li>facilities</li></NavLink>
+            <NavLink to='/activities'><li>activities</li></NavLink>
+            <NavLink to='/careers'><li>careers</li></NavLink>
+            <NavLink to='/Admissions'><li>Admissions</li></NavLink>
+            <NavLink to='/gallery'><li>gallery</li></NavLink>
+            <NavLink to='/faq'><li>FAQ's</li></NavLink>
+            <NavLink to='/contact'><li>contact</li></NavLink>
+        </ul>
+        )
     return(
         <>
         <div className='nav-con'>
@@ -98,7 +127,7 @@ function Navbar(){
                        
                     </ul>
                 </div>
-                <div className='nav-res'>
+                <div className='nav-res' onClick={toggleDrawer('left', true)}>
                     <div className='nav-res-lines'>
                         <div></div>
                         <div></div>
@@ -108,6 +137,13 @@ function Navbar(){
                 </div>
             </div>
         </div>
+        <Drawer
+            anchor={'left'}
+            open={menutoggle['left']}
+            onClose={toggleDrawer('left', false)}
+          >
+            {list('left')}
+          </Drawer>
         </>
     );
 }
