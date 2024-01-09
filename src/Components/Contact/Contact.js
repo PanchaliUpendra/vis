@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Contact.css';
 // import Contactus from './contactassets/contactus.jpeg';
 import CallIcon from '@mui/icons-material/Call';
@@ -8,6 +8,9 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 
 function Contact(){
+    useEffect(()=>{
+        window.scrollTo({top:0,behavior:'instant'});
+    },[]);
     return(
         <>
             <div className='contact-con'>

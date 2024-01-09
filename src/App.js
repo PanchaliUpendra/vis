@@ -7,6 +7,7 @@ import Activities from './Components/Activities/Activities';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Gallery from './Components/Gallery/Gallery';
+import Academics from './Components/Academics/Academics';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/gallery' element={<Gallery/>}/>
+      <Route path='/academics' element={<Academics/>}/>
     </Routes>
     </BrowserRouter>
   );

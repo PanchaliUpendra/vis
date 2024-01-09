@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Gallery.css';
 import Promo from './Galleryasset/promo.mp4';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
@@ -16,9 +16,9 @@ import g9 from './Galleryasset/g9.jpg';
 import g10 from './Galleryasset/g10.jpg';
 
 function Gallery(){
-
-    
-
+    useEffect(()=>{
+        window.scrollTo({top:0,behavior:'instant'});
+    },[]);
     return(
         <>
             <div className='gallery-con'>

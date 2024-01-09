@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
 import Aboutbanner from './aboutassets/aboutbanner.png';
 import mission from './aboutassets/mission.jpg';
@@ -12,6 +12,9 @@ import tpillar3 from './aboutassets/tpillar3.png';
 import Principle from './aboutassets/principal.jpg';
 
 function About(){
+    useEffect(()=>{
+        window.scrollTo({top:0,behavior:'instant'});
+    },[]);
     return(
         <>
             {/* about-banner */}

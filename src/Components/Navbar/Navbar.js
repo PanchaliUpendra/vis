@@ -67,13 +67,16 @@ function Navbar(){
                             </div>
                         </li>
                         </NavLink>
-                        
-                        <li>
-                            <div className='button-wrapper'>
-                                <div className='btn-wrapper-top'>Academics</div>
-                                <span className='btn-wrapper-bottom'>Academics</span>
-                            </div>
-                        </li>
+
+                        <NavLink to='/academics'>
+                            <li>
+                                <div className='button-wrapper'>
+                                    <div className='btn-wrapper-top'>Academics</div>
+                                    <span className='btn-wrapper-bottom'>Academics</span>
+                                </div>
+                            </li>
+                        </NavLink>
+
                         <li>
                             <div className='button-wrapper'>
                                 <div className='btn-wrapper-top'>facilities</div>

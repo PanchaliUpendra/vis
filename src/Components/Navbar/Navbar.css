@@ -179,7 +179,6 @@
 
 .active{
     color: #FF5C35;
-    background-color: aliceblue;
 }
 
 @media screen and (max-width:1467px){
@@ -209,6 +208,11 @@
     .nav-log{
         position: absolute;
         top:-5px;
+    }
+
+    .active{
+        color: #FF5C35;
+        background-color: aliceblue;
     }
 }
 
