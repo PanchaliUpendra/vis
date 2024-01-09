@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Activities from './Components/Activities/Activities';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
+import Gallery from './Components/Gallery/Gallery';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path='/activities' element={<Activities/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/gallery' element={<Gallery/>}/>
     </Routes>
     </BrowserRouter>
   );

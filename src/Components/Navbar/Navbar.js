@@ -73,12 +73,14 @@ function Navbar(){
                                 <span className='btn-wrapper-bottom'>Admissions</span>
                             </div>
                         </li>
-                        <li>
-                            <div className='button-wrapper'>
-                                <div className='btn-wrapper-top'>gallery</div>
-                                <span className='btn-wrapper-bottom'>gallery</span>
-                            </div>
-                        </li>
+                        <NavLink to='/gallery'>
+                            <li>
+                                <div className='button-wrapper'>
+                                    <div className='btn-wrapper-top'>gallery</div>
+                                    <span className='btn-wrapper-bottom'>gallery</span>
+                                </div>
+                            </li>
+                        </NavLink>
                         <li>
                             <div className='button-wrapper'>
                                 <div className='btn-wrapper-top'>FAQ's</div>
