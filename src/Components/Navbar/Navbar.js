@@ -4,7 +4,10 @@ import Vlogo from '../../Assets/vislogo.jpeg';
 import { NavLink } from 'react-router-dom';
 import Drawer from '@mui/material/Drawer';
 
+import { useNavigate } from 'react-router-dom';
+
 function Navbar(){
+    const navigate = useNavigate();
     const [menutoggle,setmenutoggle] = useState({
         left:false
     });
@@ -38,7 +41,7 @@ function Navbar(){
         <div className='nav-con'>
             <div className='nav-inner-con'>
                 <div className='nav-log-outbox'>
-                <div className='nav-log'>
+                <div className='nav-log' onClick={()=>navigate('/')}>
                         <img src={Vlogo} alt='vlogo'/>
                         <div className='nav-log-head'>
                             <p><span>v</span>ivekananda</p>
