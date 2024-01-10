@@ -182,9 +182,9 @@
 }
 
 @media screen and (max-width:1467px){
-    .nav-log{
-        position: relative;
-        top: 0;
+    .nav-log-ul>ul li{
+        font-family: 0.75rem;
+        width: 80px;
     }
 }
 

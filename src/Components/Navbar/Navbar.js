@@ -135,12 +135,12 @@ function Navbar(){
                         </NavLink>
                         
                         <NavLink to='/contact'>
-                        <li>
-                            <div className='button-wrapper'>
-                                <div className='btn-wrapper-top'>contact</div>
-                                <span className='btn-wrapper-bottom'>contact</span>
-                            </div>
-                        </li>
+                            <li>
+                                <div className='button-wrapper'>
+                                    <div className='btn-wrapper-top'>contact</div>
+                                    <span className='btn-wrapper-bottom'>contact</span>
+                                </div>
+                            </li>
                         </NavLink>
                        
                     </ul>
