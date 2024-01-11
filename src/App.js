@@ -11,6 +11,7 @@ import Academics from './Components/Academics/Academics';
 import Admissions from './Components/Admissions/Admissions';
 import Error from './Components/Error/Error';
 import Faq from './Components/FAQ/Faq';
+import Facilities from './Components/Facilities/Facilities';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path='/academics' element={<Academics/>}/>
       <Route path='/admissions' element={<Admissions/>}/>
       <Route path='/faq' element={<Faq/>}/>
+      <Route path='/facilities' element={<Facilities/>}/>
       <Route path='/*' element={<Error/>}/>
     </Routes>
     </BrowserRouter>
