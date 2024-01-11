@@ -12,6 +12,7 @@ import Admissions from './Components/Admissions/Admissions';
 import Error from './Components/Error/Error';
 import Faq from './Components/FAQ/Faq';
 import Facilities from './Components/Facilities/Facilities';
+import Career from './Components/Career/Career';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path='/faq' element={<Faq/>}/>
       <Route path='/facilities' element={<Facilities/>}/>
       <Route path='/*' element={<Error/>}/>
+      <Route path='/careers' element={<Career/>}/>
     </Routes>
     </BrowserRouter>
   );
