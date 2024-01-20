@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './Home.css';
 import Homepic from './hassets/homepic.png';
-import weltvis from './hassets/discussion.png';
+import weltvis from './hassets/discussion.jpg';
 
 function Home(){
     const [philosophy,setphilosophy] = useState(false);
